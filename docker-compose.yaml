@@ -22,7 +22,7 @@ services:
       - "8000:8000"
 
     # Name and version of the backend image in Azure Container Registry
-    image: pokemonregistry314-dbfkhhb2g3eyeybj.azurecr.io/backend:v1
+    image: deployaira-btangacjhacadfee.azurecr.io/backend:v1
 
   # Streamlit frontend service
   frontend:
@@ -50,4 +50,4 @@ services:
       BACKEND_URL: http://backend:8000
 
     # Name and version of the frontend image in Azure Container Registry
-    image: pokemonregistry314-dbfkhhb2g3eyeybj.azurecr.io/frontend:v2
+    image: deployaira-btangacjhacadfee.azurecr.io/frontend:v2
