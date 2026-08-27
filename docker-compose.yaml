@@ -11,7 +11,7 @@ services:
 
     # Instructions for building the backend image
     build:
-      # Use the current project folder as the build context
+      # Use the current project folder as the build context to be extra clear
       context: .
 
       # Use this Dockerfile to build the backend

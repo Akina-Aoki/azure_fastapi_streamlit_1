@@ -19,4 +19,6 @@ WORKDIR /app/src/frontend
 
 # Start the Streamlit dashboard
 # 0.0.0.0 makes the app accessible outside the Docker container
+# ells Streamlit to run on port 8501 inside the container. ""--server.port=8501", "--server.address=0.0.0.0""
+# Start the Streamlit app on port 8501 and make it accessible through Docker.
 CMD ["uv", "run", "streamlit", "run", "dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
